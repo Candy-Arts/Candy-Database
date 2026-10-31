@@ -1,0 +1,11 @@
+{
+	"title": "Standard",
+	"description": "Follows the Godot editor's own theme.",
+	"style": {
+		"background_color": "editor:dark_color_2",
+		"text_color": "editor:font_color",
+		"link_color": "editor:accent_color",
+		"code_color": "editor:success_color"
+	},
+	"theme": {}
+}

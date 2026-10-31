@@ -1,0 +1,43 @@
+[font_size=32][b]Pages[/b][/font_size]
+
+A page is a [code]txt[/code] file written in BBCode (see [url=page:Writing_a_Database/BBCode]BBCode[/url]).
+
+
+[font_size=22][b]Titles and order[/b][/font_size]
+The page list shows, for each page, a title, and sorts pages and categories by an order number.
+
+[ul]
+[b]Title:[/b] the file name, without its number or extension, with underscores turned into spaces. [code]02_Installing_It.txt[/code] is [i]Installing It[/i].
+[b]Order:[/b] the number at the start of the file or folder name. Items without a number come after the numbered ones, in alphabetical order.
+[/ul]
+
+The same goes for folders: [code]01_Getting_Started[/code] is the category [i]Getting Started[/i], shown first.
+
+
+[font_size=22][b]Setting them by hand[/b][/font_size]
+A page can start with lines that set its title or order, before anything else:
+
+[indent][code]@title: What's new in 2.0
+@order: 5
+
+Text of the page starts here.[/code][/indent]
+
+These lines are read and not shown. Use them when a file name can not say what you want, such as a title with punctuation.
+
+
+[font_size=22][b]Page ids and links[/b][/font_size]
+Every page has an [b]id[/b]: its path in the language folder, without numbers or extension. [code]02_Reference/01_Functions.txt[/code] has the id [code]Reference/Functions[/code].
+
+Link to a page from another with its id, in a [code]url[/code] tag:
+
+[indent][code][lb]url=page:Reference/Functions]the function list[lb]/url][/code][/indent]
+
+Ids are case sensitive, and belong to a version and language: a link can not jump to another version, language or database. If the id does not exist, the page says so.
+
+
+[font_size=22][b]Good habits[/b][/font_size]
+[ul]
+Start a page with a title, such as [code][lb]font_size=32][lb]b]Title[lb]/b][lb]/font_size][/code]. Candy Database does not add one.
+Keep one subject per page, so search and links stay useful.
+Numbers in file names leave room to add pages later: use 10, 20, 30.
+[/ul]

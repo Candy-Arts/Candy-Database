@@ -1,0 +1,33 @@
+[font_size=32][b]About menu[/b][/font_size]
+
+Some pages are about the database rather than what it documents: a change log, credits, a license. Put them in an [code]_About[/code] folder and they are listed in the [b]About[/b] menu of the top bar, not in the page list. The search doesn't look in them either.
+
+The menu only shows when the open database has at least one such page.
+
+
+[font_size=22][b]Where to put them[/b][/font_size]
+Like the [url=page:Writing_a_Database/Header_and_Footer]header[/url], an [code]_About[/code] folder can go in three places:
+
+[ul]
+the [b]database folder[/b], for pages shown in every version and language (credits, a license),
+a [b]version folder[/b], for pages of that version only (its change log),
+a [b]language folder[/b], for pages in that language.
+[/ul]
+
+The menu shows the pages of all three together. When two have the same name (without its number), the more specific one is used: a language's [code]Change_Log.txt[/code] replaces the version's, and the version's replaces the database's. That way a translation can replace a page without the others being listed twice.
+
+
+[font_size=22][b]Writing them[/b][/font_size]
+They are pages like any other (see [url=page:Writing_a_Database/Pages]Pages[/url]):
+
+[ul]
+Number prefixes set their order in the menu: [code]01_Change_Log.txt[/code], [code]02_Credits.txt[/code].
+[code]@title:[/code] and [code]@order:[/code] work too.
+They can show images and links, and the header and footer are shown around them.
+[/ul]
+
+Sub-folders of [code]_About[/code] are not read: the menu has no categories.
+
+
+[font_size=22][b]Linking to them[/b][/font_size]
+Their ids start with [code]_About/[/code]: link to a change log with [code][lb]url=page:_About/Change_Log]Change log[lb]/url][/code].

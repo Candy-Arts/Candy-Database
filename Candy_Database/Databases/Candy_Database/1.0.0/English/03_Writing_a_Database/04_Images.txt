@@ -1,0 +1,33 @@
+[font_size=32][b]Images[/b][/font_size]
+
+Use Godot's [code]img[/code] tag:
+
+[indent][code][lb]img]_images/logo.png[lb]/img]
+[lb]img height=64]_images/logo.png[lb]/img]
+[lb]img width=50%]_images/logo.png[lb]/img][/code][/indent]
+
+[font_size=22][b]Where images are found[/b][/font_size]
+Write the path relative to a folder of the database. Candy Database tries, in order:
+
+[ol]
+The folder of the page itself.
+The language folder.
+The version folder.
+The database folder.
+[/ol]
+
+[code]res://[/code] paths work as well. Put your images in a folder starting with [code]_[/code] (such as [code]_images[/code]), so it is not taken for a category.
+
+PNG, JPG, WebP and SVG files work. They can be anywhere in the database folder, even if Godot never imported them.
+
+
+[font_size=22][b]Size[/b][/font_size]
+An image keeps its own size, unless you give one: [code]width=[/code] and [code]height=[/code], in pixels or as a percentage of the page ([code]width=100%[/code]). An image wider than the page is shrunk to fit, so it never gets cut off.
+
+
+[font_size=22][b]What is refused[/b][/font_size]
+[ul]
+Images from the internet ([code]http[/code], [code]https[/code]). A database can not fetch anything by itself.
+Files outside the database folder.
+[/ul]
+A missing or refused image is replaced by a short note in italics, so you can see what went wrong.

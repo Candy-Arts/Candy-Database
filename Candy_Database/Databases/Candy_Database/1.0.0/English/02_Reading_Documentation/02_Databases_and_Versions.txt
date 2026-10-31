@@ -1,0 +1,38 @@
+[font_size=32][b]Databases, versions and languages[/b][/font_size]
+
+Three drop-downs in the sidebar choose what you read.
+
+
+[font_size=22][b]Database[/b][/font_size]
+Every database found in the library folder and in your project is listed, sorted by title. Candy Database remembers the last one you opened.
+
+
+[font_size=22][b]Version[/b][/font_size]
+A database has a folder for each version of what it documents. The newest is listed first.
+
+When you choose a database, its version is picked in this order:
+
+[ol]
+The version your project has installed, if the database says where to look (a [code]version_hint[/code], see [url=page:Writing_a_Database/database_json]database.json[/url]).
+The version you read last time.
+The newest version.
+[/ol]
+
+Each version has its own pages, so the list of pages, the search and the history all start over when you change the version. Candy Database remembers the page you were reading in each version and language.
+
+
+[font_size=22][b]Language[/b][/font_size]
+Each version has a folder for each language it is written in. The drop-down under the version one picks it. Your preferred languages (below) are listed at the top, in the order you typed them, and the others by name below them.
+
+When you choose a version, its language is picked in this order:
+
+[ol]
+The language you last picked in this database's drop-down.
+The first of your preferred languages the version has. Type them in the settings' [b]General[/b] tab, under [i]Language[/i], most wanted first and separated by commas ([code]Français, English[/code]). Case doesn't matter.
+The database's default language (its [code]default_language[/code], see [url=page:Writing_a_Database/database_json]database.json[/url]), or [code]English[/code] when it names none.
+The first language in the list.
+[/ol]
+
+Changing your preferred languages forgets the ones you picked in the drop-down, so every database opens in your new choice.
+
+Each language has its own pages, so the list of pages, the search and the history start over when you change it.

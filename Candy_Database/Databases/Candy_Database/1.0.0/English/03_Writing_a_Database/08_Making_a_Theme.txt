@@ -1,0 +1,44 @@
+[font_size=32][b]Making a theme[/b][/font_size]
+
+A theme is a JSON file named after its id: [code]Sea_Blue.json[/code] is the theme [code]Sea_Blue[/code].
+
+[indent][code]{
+	"title": "Sea Blue",
+	"description": "Cool blues.",
+	"style": {
+		"background_color": "#ffffff",
+		"text_color": "#0d2a3a",
+		"link_color": "#1d6fa5"
+	},
+	"theme": {
+		"toolbar_color": "#2a8fbd",
+		"sidebar_color": "#d6edf7",
+		"button_color": "#9bd0e8",
+		"accent_color": "#1d6fa5",
+		"text_color": "#0d2a3a"
+	}
+}[/code][/indent]
+
+[ul]
+[b]title[/b] is the name in the settings.
+[b]style[/b] is the page (see [url=page:Reference/Style_Keys]Style keys[/url]).
+[b]theme[/b] is the tab (see [url=page:Reference/Theme_Keys]Theme keys[/url]). A theme with an empty [code]theme[/code] block leaves the tab as the editor draws it, like Standard.
+[/ul]
+
+
+[font_size=22][b]Where to put it[/b][/font_size]
+In a [code]Themes[/code] folder beside the library folder: the [code]Candy_Database[/code] folder of the editor's data folder holds both [code]Databases[/code] (the library folder, which [i]Database > Open Library Folder[/i] opens) and [code]Themes[/code]. A theme there with the same file name as one that comes with Candy Database replaces it.
+
+The themes that come with the plugin are in its own [code]Themes[/code] folder: a good place to look for examples.
+
+
+[font_size=22][b]Following the editor[/b][/font_size]
+In the [code]style[/code] block only, a color can be written [code]editor:name[/code]: one of the editor's own colors, such as [code]editor:font_color[/code] or [code]editor:accent_color[/code]. The page then follows whichever editor theme is in use, light or dark. That is how Standard works.
+
+
+[font_size=22][b]Tips[/b][/font_size]
+[ul]
+The editor's icons are light, for dark backgrounds. With a light sidebar, set [code]list_icon_color[/code] and [code]arrow_color[/code] so the page list stays readable.
+Check the settings window and its tabs, the color picker and the menus too: they take the theme's colors.
+Keep enough contrast between text and its background.
+[/ul]

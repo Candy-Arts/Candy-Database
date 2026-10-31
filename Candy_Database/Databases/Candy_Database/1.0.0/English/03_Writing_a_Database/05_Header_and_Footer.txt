@@ -1,0 +1,36 @@
+[font_size=32][b]Header and footer[/b][/font_size]
+
+A database can show a [b]header[/b] above all its pages, and a [b]footer[/b] below them: a logo, the name and version, a few links, a copyright notice.
+
+Each is a page of its own. Write it in BBCode, in a file named [code]_header.txt[/code] or [code]_footer.txt[/code], and place it:
+
+[ul]
+in the [b]database folder[/b], to show it on every page of every version and language, or
+in a [b]version folder[/b], to give that version its own. This one wins over the database's, or
+in a [b]language folder[/b], to give that language its own. This one wins over the version's.
+[/ul]
+
+The header and the footer are found separately: a version can have its own header and share the database's footer.
+
+To use other names, set [code]header[/code] and [code]footer[/code] in [code]database.json[/code].
+
+
+[font_size=22][b]Examples[/b][/font_size]
+A header, in [code]_header.txt[/code]:
+[indent][code][lb]center][lb]img height=80]_images/logo.png[lb]/img][lb]/center]
+[lb]center][lb]b]My Add-on[lb]/b] · documentation[lb]/center]
+[lb]hr][/code][/indent]
+
+A footer, in [code]_footer.txt[/code]:
+[indent][code][lb]hr]
+[lb]center]© 2026 My Studio · [lb]url=page:Getting_Started/Installing]Installing[lb]/url][lb]/center][/code][/indent]
+
+
+[font_size=22][b]How they behave[/b][/font_size]
+[ul]
+The header scrolls up with the page, unless the database sets [code]header_scrolls[/code] to [code]"0"[/code] in [code]database.json[/code]: then it stays fixed above the page.
+The footer follows the end of the text and scrolls with it. When the text is shorter than the page, the footer is displayed at the bottom of the page. If the database sets [code]footer_scrolls[/code] to [code]"0"[/code], the footer stays fixed below the page instead.
+Both have the same text width as the page, centered. Their backgrounds (a color or an image) span the full width. See [url=page:Reading_Documentation/Settings]Settings[/url] and [url=page:Reference/Style_Keys]Style keys[/url] for the backgrounds.
+Their height follows their content.
+Readers can hide them in [i]View > Show Page Header[/i] and [i]View > Show Page Footer[/i].
+[/ul]

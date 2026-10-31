@@ -1,0 +1,28 @@
+[font_size=32][b]Links[/b][/font_size]
+
+[b]Official Sources[/b]
+[url=https://candy-arts.com/]Official Site[/url]
+[url=https://github.com/Candy-Arts]GitHub[/url]
+[url=https://www.youtube.com/@CandyArtsStudio]Youtube[/url]
+
+[b]Documentation[/b]
+[url=https://candy-arts.com/docs/]Documentation[/url] (Official Site)
+[url=https://github.com/Candy-Arts/Candy-Arts/tree/main/DATABASES]Documents[/url] (GitHub)
+
+[b]News/Information[/b]
+[url=https://candy-arts.com/index.php/announcements/]Announcements[/url] (Official Site)
+[url=https://github.com/Candy-Arts/Candy-Arts/discussions/categories/announcements]Discussion Board[/url] (GitHub)
+
+[b]Community/Discussion/Feedback[/b]
+[url=https://github.com/Candy-Arts/Candy-Arts/discussions/categories/announcements]Discussion Board[/url] (GitHub)
+[url=https://discord.gg/CZ9RZxzmNf]Discord[/url]
+
+[b]Bugs & Issues[/b]
+[url=https://github.com/Candy-Arts/Candy-Database/issues]Report Issues[/url] (GitHub)
+
+[b]Download[/b]
+[url=https://github.com/Candy-Arts/Candy-Database/releases]GitHub[/url]
+
+[b]Licensing[/b]
+[url=https://candy-arts.com/index.php/licensing/]Licensing Overview[/url] (Official Site)
+[url=https://candy-arts.com/index.php/licenses/]Licenses[/url] (Official Site)

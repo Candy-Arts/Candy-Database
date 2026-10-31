@@ -1,0 +1,21 @@
+[font_size=32][b]Installing[/b][/font_size]
+
+Candy Database is an editor plugin. Copy its folder, [code]addons/Candy_Database[/code], into your project's [code]addons[/code] folder.
+
+Then open [i]Project > Project Settings > Plugins[/i] and tick [b]Candy Database[/b]. A [b]Candy DB[/b] tab appears in the top bar.
+
+
+[font_size=22][b]Turning it off[/b][/font_size]
+Untick the plugin in the same place. The tab disappears. Your settings stay in the editor's settings, so they are there when you turn it back on, and databases are files, so nothing is lost.
+
+
+[font_size=22][b]Where databases are found[/b][/font_size]
+Candy Database looks for databases in two places:
+
+[table=2]
+[cell][b]Place[/b][/cell][cell][b]What goes there[/b][/cell]
+[cell]The library folder[/cell][cell]Databases you keep for every project: downloaded ones, or ones you write. It is the [code]Candy_Database/Databases[/code] folder of the editor's data folder; [i]Database > Open Library Folder[/i] opens it. This documentation calls it the library folder throughout.[/cell]
+[cell]Your project[/cell][cell]Any folder of the project holding a [code]database.json[/code] file. An add-on can ship its documentation this way.[/cell]
+[/table]
+
+A database is found by its [code]database.json[/code]. After adding or changing files, choose [i]Database > Refresh[/i].

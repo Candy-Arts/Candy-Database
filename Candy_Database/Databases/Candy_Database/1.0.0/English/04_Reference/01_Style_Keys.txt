@@ -1,0 +1,32 @@
+[font_size=32][b]Style keys[/b][/font_size]
+
+The [code]style[/code] block of a database or a theme. All optional. Colors are written [code]#rrggbb[/code] (or a color name).
+
+[table=2]
+[cell][b]Key[/b][/cell][cell][b]Meaning[/b][/cell]
+[cell]background_color[/cell][cell]The page's background.[/cell]
+[cell]text_color[/cell][cell]The page's text.[/cell]
+[cell]link_color[/cell][cell]Links.[/cell]
+[cell]code_color[/cell][cell][lb]code] text.[/cell]
+[cell]background_texture[/cell][cell]An image behind the page. In a database: a path relative to the database folder.[/cell]
+[cell]background_texture_mode[/cell][cell][code]Cover[/code], [code]Stretch[/code] or [code]Tile[/code].[/cell]
+[cell]background_opacity[/cell][cell]0 to 1.[/cell]
+[cell]header_background_color[/cell][cell]The header's background. Left out: transparent, showing the page.[/cell]
+[cell]header_text_color[/cell][cell]The header's text. Left out: the page's text color.[/cell]
+[cell]header_background_texture[/cell][cell]An image behind the header. Path relative to the database folder.[/cell]
+[cell]header_background_mode[/cell][cell][code]Cover[/code], [code]Stretch[/code] or [code]Tile[/code].[/cell]
+[cell]footer_background_color[/cell][cell]The footer's background. Left out: transparent, showing the page.[/cell]
+[cell]footer_text_color[/cell][cell]The footer's text. Left out: the page's text color.[/cell]
+[cell]footer_background_texture[/cell][cell]An image behind the footer. Path relative to the database folder.[/cell]
+[cell]footer_background_mode[/cell][cell][code]Cover[/code], [code]Stretch[/code] or [code]Tile[/code].[/cell]
+[cell]scroll_bar_color[/cell][cell]The scroll bar's track. Left out: a faint tint of the page's text color.[/cell]
+[cell]scroll_grabber_color[/cell][cell]The part you drag. Left out: the page's text color, half see-through.[/cell]
+[cell]scroll_grabber_hover_color[/cell][cell]The grabber under the mouse. Left out: the grabber's color, closer to the text color.[/cell]
+[cell]scroll_grabber_pressed_color[/cell][cell]The grabber while dragged. Left out: the grabber's color, closer still to the text color.[/cell]
+[cell]scroll_bar_width[/cell][cell]The scroll bar's width in pixels, 2 to 32. Left out: 10.[/cell]
+[cell]scroll_bar_radius[/cell][cell]How round its corners are, in pixels, 0 to 16. Left out: 4.[/cell]
+[/table]
+
+A color can be given with its transparency, as [code]#rrggbbaa[/code]: [code]"scroll_bar_color": "#00000000"[/code] would be fully see-through, so it counts as left out. Use [code]"#00000001"[/code] for a track you can't see.
+
+In a theme file, the [code]editor:name[/code] form is also understood for colors, and the two image keys are not available (a theme has no folder of its own for images).

@@ -1,0 +1,10 @@
+[font_size=32][b]Links and history[/b][/font_size]
+
+[ul]
+A link to another page of the same database, version and language opens it in the page. Ctrl+click (Cmd+click on macOS) opens it beside it instead (see [url=page:Getting_Started/The_Interface]The interface[/url]).
+A link to a website asks you first ([i]Open this link in your browser?[/i]), then opens it in your browser. Only [code]http[/code] and [code]https[/code] links work.
+[/ul]
+
+[b]Back[/b] and [b]Forward[/b] (the two arrows in the page's bar) walk through the pages you have read. With two pages open, each has its own history.
+
+The history belongs to the database, version and language you have open: changing either starts a new one.

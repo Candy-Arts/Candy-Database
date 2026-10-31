@@ -1,0 +1,27 @@
+[font_size=32][b]Candy Database[/b][/font_size]
+
+Candy Database is a documentation browser inside the Godot editor. It adds a tab, [b]Candy DB[/b], to the top bar, next to 2D, 3D, Script and AssetLib.
+
+A [b]database[/b] is a folder of documentation pages, sorted in categories, and it can have several versions. Candy Database can hold as many databases as you like, for different add-ons, and you pick the one to read from a drop-down.
+
+
+[font_size=22][b]What it does[/b][/font_size]
+[ul]
+Shows pages written in Godot's BBCode: text, colors, tables, images and links.
+Sorts pages in categories, with a search box that looks through titles and text.
+Keeps one set of pages per version of an add-on, and opens the version you have installed.
+Looks the way you want: a theme for the whole tab, your own colors, a background image, and a header and a footer around the pages.
+[/ul]
+
+[font_size=22][b]What it is not[/b][/font_size]
+Candy Database is only a reader. It does not edit pages: they are plain [code]txt[/code] files you write in any text editor (see [url=page:Writing_a_Database/Pages]Pages[/url]).
+
+It does not depend on any other plugin, and nothing else depends on it.
+
+
+[font_size=22][b]Where to go next[/b][/font_size]
+[ul]
+[url=page:Getting_Started/Installing]Installing[/url] and opening the tab.
+[url=page:Getting_Started/The_Interface]The interface[/url], for a tour of the tab.
+[url=page:Writing_a_Database/Folder_Layout]Folder layout[/url], to write documentation of your own.
+[/ul]

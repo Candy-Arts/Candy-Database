@@ -1,0 +1,41 @@
+[font_size=32][b]BBCode[/b][/font_size]
+
+Pages use Godot's BBCode, the same as a [code]RichTextLabel[/code]. It is not the same as the BBCode of forums: some tags are missing and some are Godot's own. The full list is in Godot's documentation, under [i]BBCode in RichTextLabel[/i].
+
+These are the ones used most:
+
+[table=2]
+[cell][b]Write[/b][/cell][cell][b]To get[/b][/cell]
+[cell][lb]b]bold[lb]/b][/cell][cell][b]bold[/b][/cell]
+[cell][lb]i]italic[lb]/i][/cell][cell][i]italic[/i][/cell]
+[cell][lb]u]underlined[lb]/u][/cell][cell][u]underlined[/u][/cell]
+[cell][lb]s]crossed out[lb]/s][/cell][cell][s]crossed out[/s][/cell]
+[cell][lb]code]code[lb]/code][/cell][cell][code]code[/code][/cell]
+[cell][lb]color=#ff8800]color[lb]/color][/cell][cell][color=#ff8800]color[/color][/cell]
+[cell][lb]font_size=24]big[lb]/font_size][/cell][cell][font_size=24]big[/font_size][/cell]
+[cell][lb]center]centered[lb]/center][/cell][cell][center]centered[/center][/cell]
+[cell][lb]url=page:Id]link[lb]/url][/cell][cell]a link to a page[/cell]
+[cell][lb]img]...[lb]/img][/cell][cell]an image (see [url=page:Writing_a_Database/Images]Images[/url])[/cell]
+[cell][lb]hr][/cell][cell]a horizontal line[/cell]
+[/table]
+
+[font_size=22][b]Lists[/b][/font_size]
+[indent][code][lb]ul]
+First point
+Second point
+[lb]/ul][/code][/indent]
+[code]ol[/code] makes a numbered list. Each line is one item.
+
+
+[font_size=22][b]Tables[/b][/font_size]
+[indent][code][lb]table=2]
+[lb]cell][lb]b]Name[lb]/b][lb]/cell][lb]cell][lb]b]Meaning[lb]/b][lb]/cell]
+[lb]cell]Key[lb]/cell][lb]cell]What it is[lb]/cell]
+[lb]/table][/code][/indent]
+[code]table=2[/code] says how many columns there are. Cells fill the table row by row.
+
+
+[font_size=22][b]Writing a bracket[/b][/font_size]
+A [code][lb][/code] starts a tag. To write one in the text, use [code][lb]lb][/code]. For example, [code][lb]lb]b][/code] shows [lb]b] as plain text.
+
+A tag that is never closed, or closed out of order, shows up as plain text in the page. If something looks wrong, check the tags around it.

@@ -1,0 +1,22 @@
+[font_size=32][b]Limits and safety[/b][/font_size]
+
+
+[font_size=22][b]Safety[/b][/font_size]
+Databases can come from anywhere, so Candy Database treats them as text:
+
+[ul]
+Pages are BBCode. They can not run code.
+Themes and styles are plain values in JSON. There are no Godot theme or resource files to load, which could carry scripts.
+Links to websites ask before opening, and only [code]http[/code] and [code]https[/code] ones open.
+Images come from the database's own folder. Nothing is downloaded by a page.
+Fonts are files of the database folder.
+[/ul]
+
+
+[font_size=22][b]Things to know[/b][/font_size]
+[ul]
+After adding or changing files of a database, use [i]Database > Refresh[/i] to see them.
+Links only reach pages of the same database, version and language. There are no links to a spot inside a page, or to another database.
+Search covers the open language of the open version of the open database.
+Settings belong to the editor (every project shares them). They are saved under [code]candy_database/[/code] in the editor settings.
+[/ul]

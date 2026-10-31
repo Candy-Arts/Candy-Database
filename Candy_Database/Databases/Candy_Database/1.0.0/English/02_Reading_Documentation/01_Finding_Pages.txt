@@ -1,0 +1,12 @@
+[font_size=32][b]Finding pages[/b][/font_size]
+
+Write in the search box to look through the pages of the database and version you have open.
+
+[ul]
+Pages whose [b]title[/b] contains your text come first.
+Pages whose [b]text[/b] contains it come next. Hover over one to see the part of the page that matched.
+[/ul]
+
+While you search, the list shows the matching pages one after the other, without categories. Empty the box (or press its clear button) to get the categories back.
+
+The search ignores capital letters, and looks for your text as you typed it, not word by word. It only covers the current language of the current version of the current database.

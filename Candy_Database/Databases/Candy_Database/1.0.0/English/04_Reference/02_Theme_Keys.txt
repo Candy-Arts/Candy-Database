@@ -1,0 +1,29 @@
+[font_size=32][b]Theme keys[/b][/font_size]
+
+The [code]theme[/code] block of a database or a theme. All optional: what you leave out stays as the editor draws it. Colors are written [code]#rrggbb[/code].
+
+[table=2]
+[cell][b]Key[/b][/cell][cell][b]What it colors or sets[/b][/cell]
+[cell]toolbar_color[/cell][cell]The top bar's background.[/cell]
+[cell]sidebar_color[/cell][cell]The sidebar's background (search box, drop-downs), and dialogs.[/cell]
+[cell]list_color[/cell][cell]The page list's background. Left out: the sidebar's.[/cell]
+[cell]field_color[/cell][cell]Text fields, and the settings' tab pages with their selected tab. Also the page list, when there is no list color or sidebar color.[/cell]
+[cell]button_color[/cell][cell]Buttons, drop-downs, and the settings' tabs that aren't selected. Also menus, when there is no field color.[/cell]
+[cell]hover_color[/cell][cell]Buttons and tabs under the mouse. Left out: a lighter button color.[/cell]
+[cell]pressed_color[/cell][cell]Pressed buttons. Left out: the accent color.[/cell]
+[cell]accent_color[/cell][cell]The selected page, and the highlighted menu entry.[/cell]
+[cell]text_color[/cell][cell]The text of the bars, menus, buttons and tabs (not the page's: see the style).[/cell]
+[cell]border_color[/cell][cell]Borders of buttons, fields, tabs, the page list and menus.[/cell]
+[cell]border_width[/cell][cell]0 to 4 pixels. No border without a border color.[/cell]
+[cell]corner_radius[/cell][cell]0 to 16 pixels.[/cell]
+[cell]icon_color[/cell][cell]Tints the icons of buttons (back, forward, close, settings).[/cell]
+[cell]list_icon_color[/cell][cell]The page list's folder and script icons, redrawn in this color.[/cell]
+[cell]arrow_color[/cell][cell]The page list's fold arrows. Left out: list_icon_color.[/cell]
+[cell]second_page_color[/cell][cell]With two pages open, the second one's page in the page list (the first one's is accent_color). Left out: orange. The user's own choice in the settings wins.[/cell]
+[cell]font[/cell][cell]A font file in the database folder. Databases only.[/cell]
+[cell]bold_font[/cell][cell]A bold font file, for the page. Databases only.[/cell]
+[cell]mono_font[/cell][cell]A monospace font file, for [code][lb]code][/code] text. The editor's code font when left out. Databases only.[/cell]
+[cell]font_size[/cell][cell]The size of the tab's text, 8 to 40.[/cell]
+[/table]
+
+In a database's [code]theme[/code] block, only the keys it lists change. They are laid over the theme in use.

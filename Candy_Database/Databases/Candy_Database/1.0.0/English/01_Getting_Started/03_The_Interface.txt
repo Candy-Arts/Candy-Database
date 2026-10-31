@@ -1,0 +1,44 @@
+[font_size=32][b]The interface[/b][/font_size]
+
+The tab has a top bar, a sidebar and the page.
+
+
+[font_size=22][b]Top bar[/b][/font_size]
+[table=2]
+[cell][b]Item[/b][/cell][cell][b]What it does[/b][/cell]
+[cell]Database menu[/cell][cell]Refresh, Open Library Folder and Settings.[/cell]
+[cell]View menu[/cell][cell]Move the sidebar, show or hide the sidebar, the page header and the page footer, change the text size.[/cell]
+[cell]About menu[/cell][cell]Pages about the database itself, such as its change log or credits. Only there when the database has some. [b]Ctrl+click[/b] opens one in the other page.[/cell]
+[cell]Settings button[/cell][cell]Opens the settings window.[/cell]
+[/table]
+
+[font_size=22][b]Sidebar[/b][/font_size]
+From top to bottom:
+
+[ol]
+The search box.
+The [b]database[/b] drop-down.
+The [b]version[/b] drop-down.
+The [b]language[/b] drop-down.
+The list of pages, in categories. Click a page to read it, and a category's arrow to fold or unfold it. Some categories are pages too: clicking one opens it. [b]Ctrl+click[/b] a page to open it in a second page (see [i]Two pages[/i] below).
+[/ol]
+
+The sidebar is on the left by default. Put it on the right in [i]View > Sidebar on the Right[/i], or in the settings' [b]Layout[/b] tab. [i]View > Show Sidebar[/i] hides it.
+
+
+[font_size=22][b]Page[/b][/font_size]
+The page is the large area. Its bar has [b]Back[/b] and [b]Forward[/b], to step through the pages you have read in it. It can have a [b]header[/b] above the text and a [b]footer[/b] below it, and a background color or image behind them.
+
+You can select and copy text with the mouse. Links are underlined and clickable.
+
+
+[font_size=22][b]Two pages[/b][/font_size]
+[b]Ctrl+click[/b] a page in the list, or a link in a page ([b]Cmd+click[/b] on macOS), to open it beside the one you are reading. The page area splits in two, with the second page on the right; the settings' [b]Layout[/b] tab can put it on the left, above or below instead. Drag the line between them to share the room differently.
+
+[ul]
+Each page has its own bar, with its own [b]Back[/b] and [b]Forward[/b], and an [b]X[/b] that closes it. The X only shows while two pages are open.
+A plain click in the list always opens the page in the main page, and Ctrl+click in the second page. Closing the main page makes the second page the main one.
+Ctrl+click on a link opens it in the other page: from the main page in the second page, and from the second page in the main page.
+The list marks both pages. With [i]Mark the second page in a color of its own[/i] (in the settings' [b]Layout[/b] tab), the second page's is marked in another color, also shown at the left of its bar, to tell them apart.
+Changing the database, version or language goes back to one page.
+[/ul]

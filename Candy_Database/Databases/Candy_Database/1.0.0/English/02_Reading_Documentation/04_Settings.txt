@@ -1,0 +1,63 @@
+[font_size=32][b]Settings[/b][/font_size]
+
+Open the settings with [i]Database > Settings...[/i] or the button at the right of the top bar. Every change applies at once and is saved in the editor's settings, so it is the same in all your projects.
+
+The settings are sorted in four tabs: [b]General[/b], [b]Layout[/b], [b]Look[/b] and [b]Databases[/b]. A mod can add settings of its own, in a tab named after the mod. When a mod adds one, a second row of tabs appears at the top of the window: the [b]Candy Database[/b] tab, which contains the four tabs, followed by the mods' tabs.
+
+
+[font_size=22][b]General[/b][/font_size]
+
+[font_size=18][b]Tab[/b][/font_size]
+[b]Tab name[/b] is the name of Candy Database's tab in the editor's top bar, beside 2D, 3D and Script. Leave it empty for [i]Candy DB[/i]. The tab is renamed as soon as you press Enter or leave the field.
+
+[font_size=18][b]Language[/b][/font_size]
+[b]Preferred language[/b] lists the languages to read in, most wanted first, separated by commas ([i]Français, English[/i]). A database opens in the first of these languages it contains, or else in its own default language, until you pick a language for it in the sidebar. Changing this setting forgets the languages picked in the sidebar.
+
+
+[font_size=22][b]Layout[/b][/font_size]
+
+[font_size=18][b]Layout[/b][/font_size]
+[table=2]
+[cell][b]Setting[/b][/cell][cell][b]What it does[/b][/cell]
+[cell]Sidebar[/cell][cell]Left or right.[/cell]
+[cell]Text size[/cell][cell]The size of the page's text, from 8 to 40. [i]View > Increase / Decrease / Reset Text Size[/i] changes it too.[/cell]
+[cell]Text width limit[/cell][cell]The widest the text gets, in pixels, centered in the page. Long lines are hard to read on a wide screen. 0 lets the text fill the page.[/cell]
+[/table]
+
+[font_size=18][b]Two pages[/b][/font_size]
+For when two pages are open (see [url=page:Getting_Started/The_Interface]The interface[/url]).
+
+[table=2]
+[cell][b]Setting[/b][/cell][cell][b]What it does[/b][/cell]
+[cell]Second page opens[/cell][cell]Where the second page goes: left, right, above or below the first.[/cell]
+[cell]Page list[/cell][cell]The list marks the first page in the theme's selection color. [b]Mark the second page in a color of its own[/b] marks the second in [b]Second page's color[/b] (also shown at the left of its bar); untick it to mark both alike.[/cell]
+[cell]Second page's color[/cell][cell]Starts out as the theme's. Once you choose one, it is yours; [b]Back to the theme's colors and no background images[/b], in the [b]Look[/b] tab, takes it back.[/cell]
+[/table]
+
+
+[font_size=22][b]Look[/b][/font_size]
+
+[font_size=18][b]Theme[/b][/font_size]
+[b]Look of the tab[/b] chooses the theme: the colors and shapes of the bars, menus, buttons and sidebar. See [url=page:Reading_Documentation/Themes]Themes[/url].
+
+[font_size=18][b]Colors and background[/b][/font_size]
+[b]Background[/b], [b]text[/b], [b]link[/b] and [b]code[/b] colors, and an optional [b]background image[/b] with a fit ([i]Cover[/i] fills the page keeping its proportions, [i]Stretch[/i] fills it, [i]Tile[/i] repeats it) and an opacity.
+
+The colors start out as the theme's. Once you choose one, it is yours and stays when you change the theme. [b]Back to the theme's colors and no background images[/b] takes them all back.
+
+[font_size=18][b]Header background[/b][/font_size]
+The header is the banner a database can show above its pages (see [url=page:Writing_a_Database/Header_and_Footer]Header and footer[/url]). Here you can give it a color or an image of its own. [b]Same as the page[/b] leaves it transparent, so it shows the page's background.
+
+[font_size=18][b]Footer background[/b][/font_size]
+The same settings, for the footer a database can show below its pages.
+
+
+[font_size=22][b]Databases[/b][/font_size]
+
+[font_size=18][b]Database styles and themes[/b][/font_size]
+A database can ask for its own page colors and background (its [i]style[/i]), and for its own look for the whole tab (its [i]theme[/i]). You decide whether it gets its way:
+
+[ul]
+[b]Ignore every database theme[/b] keeps the theme you chose for every database.
+Each database that has a style or a theme gets its own checkboxes: [i]use its own style[/i] and [i]use its own theme[/i]. Untick one to keep yours for that database.
+[/ul]

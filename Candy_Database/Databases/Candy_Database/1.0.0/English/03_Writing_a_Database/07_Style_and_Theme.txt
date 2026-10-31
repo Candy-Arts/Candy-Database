@@ -1,0 +1,49 @@
+[font_size=32][b]Style and theme[/b][/font_size]
+
+A database can decide how it looks. Two parts, which a reader can turn off separately:
+
+[table=3]
+[cell][b][/b][/cell][cell][b]Covers[/b][/cell][cell][b]Set with[/b][/cell]
+[cell]Style[/cell][cell]The page: background, text, link and [lb]code] colors, background image, the header's and footer's backgrounds, and the page's scroll bar.[/cell][cell][code]style[/code][/cell]
+[cell]Theme[/cell][cell]The whole tab: top bar, sidebar, page list, buttons and menus.[/cell][cell][code]theme_name[/code] and [code]theme[/code][/cell]
+[/table]
+
+[font_size=22][b]Using a theme that exists[/b][/font_size]
+Name it, and the database is shown with it, whatever the reader chose:
+
+[indent][code]{ "theme_name": "Candy_Arts" }[/code][/indent]
+
+Themes are found by the name of their file: [code]Standard[/code] and [code]Candy_Arts[/code] come with Candy Database.
+
+
+[font_size=22][b]Adjusting it[/b][/font_size]
+Add a [code]theme[/code] block for the parts you want to change. It goes over the theme in use. The keys are in [url=page:Reference/Theme_Keys]Theme keys[/url].
+
+[indent][code]{
+	"theme_name": "Standard",
+	"theme": { "accent_color": "#c0468f", "sidebar_color": "#241a2e" }
+}[/code][/indent]
+
+
+[font_size=22][b]The page[/b][/font_size]
+[code]style[/code] sets the colors of the page. Anything you leave out is the reader's (or the theme's).
+
+[indent][code]{ "style": { "background_color": "#fffdf5", "text_color": "#222222" } }[/code][/indent]
+
+
+[font_size=22][b]Which one wins[/b][/font_size]
+For the page colors, the last of these that sets a value wins:
+
+[ol]
+The theme's own colors.
+The reader's colors from the settings.
+The database's [code]style[/code].
+[/ol]
+
+For the look of the tab: the theme the database names (or else the reader's), then the database's [code]theme[/code] block on top.
+
+A reader can turn either off for a database. Then they get their own theme or colors instead. See [url=page:Reading_Documentation/Settings]Settings[/url].
+
+
+[font_size=22][b]Fonts[/b][/font_size]
+A database's own [code]theme[/code] can use fonts: [code]font[/code], [code]bold_font[/code] and [code]mono_font[/code] (for [code][lb]code][/code] text; the editor's code font when left out) are files of the database folder (TTF or OTF), and [code]font_size[/code] sets the size of the tab's text. Fonts are not available in theme files.

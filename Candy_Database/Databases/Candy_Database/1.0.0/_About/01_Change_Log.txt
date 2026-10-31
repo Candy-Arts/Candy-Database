@@ -1,0 +1,9 @@
+[font_size=32][b]Change log[/b][/font_size]
+
+
+[font_size=22][b]1.0.0[/b][/font_size]
+[ul]
+First version: databases, versions and languages, search, two pages side by side, themes and styles, headers.
+Preferred languages, listed first in the language drop-down, and each database's default language.
+The About menu.
+[/ul]

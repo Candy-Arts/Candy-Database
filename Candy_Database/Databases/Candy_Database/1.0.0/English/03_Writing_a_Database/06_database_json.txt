@@ -1,0 +1,64 @@
+@title: database.json
+[font_size=32][b]database.json[/b][/font_size]
+
+The file at the root of a database folder. It is JSON, and every key is optional. The only thing Candy Database needs is for the file to exist.
+
+[indent][code]{
+	"title": "My Add-on",
+	"description": "What this documents.",
+	"home": "Getting_Started/Introduction",
+	"default_language": "English",
+	"version_hint": {
+		"file": "res://addons/my_addon/info.json",
+		"key": "version"
+	},
+	"header": "_header.txt",
+	"header_scrolls": "1",
+	"footer": "_footer.txt",
+	"footer_scrolls": "1",
+	"theme_name": "Candy_Arts",
+	"theme": { "accent_color": "#ff9ed8" },
+	"style": { "link_color": "#6b3fd6" },
+	"tags": { "setting": {"color": "#15803d"} }
+}[/code][/indent]
+
+[table=2]
+[cell][b]Key[/b][/cell][cell][b]Meaning[/b][/cell]
+[cell]id[/cell][cell]What identifies the database. Defaults to the folder's name. Two databases with the same id can not both be used.[/cell]
+[cell]title[/cell][cell]The name in the database drop-down. Defaults to the folder's name.[/cell]
+[cell]description[/cell][cell]A line about the database.[/cell]
+[cell]home[/cell][cell]The id of the page that opens first. Defaults to the first page.[/cell]
+[cell]default_language[/cell][cell]The language folder that opens when the reader has no preferred language this version has. Defaults to [code]English[/code]. See [url=page:Reading_Documentation/Databases_and_Versions]Databases, versions and languages[/url].[/cell]
+[cell]version_hint[/cell][cell]Opens the version the project has installed. [code]file[/code] is a JSON file, [code]key[/code] the value in it that holds the version, written with dots for nested ones ([code]install.version[/code]). The value is matched with the version folder names, ignoring a leading [code]v[/code].[/cell]
+[cell]header[/cell][cell]The file name of the header. Defaults to [code]_header.txt[/code]. See [url=page:Writing_a_Database/Header_and_Footer]Header and footer[/url].[/cell]
+[cell]header_scrolls[/cell][cell][code]"1"[/code] (the default) if the header scrolls up with the page, [code]"0"[/code] if it stays fixed above it.[/cell]
+[cell]footer[/cell][cell]The file name of the footer. Defaults to [code]_footer.txt[/code].[/cell]
+[cell]footer_scrolls[/cell][cell][code]"1"[/code] (the default) if the footer scrolls with the page, [code]"0"[/code] if it stays fixed below it.[/cell]
+[cell]theme_name[/cell][cell]The id of a theme to show the database with. See [url=page:Writing_a_Database/Style_and_Theme]Style and theme[/url].[/cell]
+[cell]theme[/cell][cell]Changes to the tab's look, over the theme. See [url=page:Reference/Theme_Keys]Theme keys[/url].[/cell]
+[cell]style[/cell][cell]The page's colors and background. See [url=page:Reference/Style_Keys]Style keys[/url].[/cell]
+[cell]tags[/cell][cell]Tags of the database's own, to color words in its pages. See [i]Tags[/i] below.[/cell]
+[/table]
+
+[font_size=22][b]Tags[/b][/font_size]
+[code]tags[/code] gives a database BBCode tags of its own, to color the kinds of words its pages mention: setting names, file names, commands... Each tag is written [code][lb]name]...[lb]/name][/code] in the pages:
+
+[indent][code]"tags": {
+	"setting": {"color": "#15803d", "dark_color": "#6fdc8c"},
+	"symbol": {"color": "#c2452d", "dark_color": "#ff8f7a", "bold": "1"},
+	"url": {"color": "#b45309", "dark_color": "#ffa25c"}
+}[/code][/indent]
+
+[table=2]
+[cell][b]Key[/b][/cell][cell][b]Meaning[/b][/cell]
+[cell]color[/cell][cell]The tag's color.[/cell]
+[cell]dark_color[/cell][cell]The color used instead on a dark page, so the tag reads on any theme. Left out: [code]color[/code].[/cell]
+[cell]bold[/cell][cell][code]"1"[/code] to show the tag's text in bold.[/cell]
+[cell]italic[/cell][cell][code]"1"[/code] to show it in italics.[/cell]
+[/table]
+
+A tag name is made of letters, digits and [code]_[/code], and can't be one of Godot's own tags ([code]b[/code], [code]color[/code], [code]table[/code]...). Two of them can be used to restyle Godot's own: [code]url[/code] colors links, and [code]code[/code] colors [code][lb]code][/code] text, instead of the style's [code]link_color[/code] and [code]code_color[/code].
+
+A reader who turns the database's style off sees the tags in the page's text color, still in bold or italics.
+
+All values are text, including numbers ([code]"2"[/code]).

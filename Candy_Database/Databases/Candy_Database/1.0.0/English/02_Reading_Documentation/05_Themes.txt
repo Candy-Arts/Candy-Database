@@ -1,0 +1,21 @@
+[font_size=32][b]Themes[/b][/font_size]
+
+A theme sets the look of the whole tab. Two come with Candy Database:
+
+[table=2]
+[cell][b]Theme[/b][/cell][cell][b]Look[/b][/cell]
+[cell]Standard[/cell][cell]The Godot editor's own look. The page follows the editor's colors, light or dark.[/cell]
+[cell]Candy Arts[/cell][cell]The green look of Candy Dialogue Creator: a green top bar, mint sidebar, light blue page list and white pages.[/cell]
+[/table]
+
+Choose one in the settings' [b]Look[/b] tab, under [b]Look of the tab[/b].
+
+
+[font_size=22][b]A database can bring its own[/b][/font_size]
+A database can say which theme to show it with, or change parts of one. Whether that applies is up to you (see [url=page:Reading_Documentation/Settings]Settings[/url]).
+
+The theme is only set on the Candy DB tab. The rest of the editor keeps its look, and anything a theme does not set is the editor's.
+
+
+[font_size=22][b]Your own themes[/b][/font_size]
+Themes are small files. See [url=page:Writing_a_Database/Making_a_Theme]Making a theme[/url] to write one.

@@ -1,0 +1,50 @@
+[font_size=32][b]Folder layout[/b][/font_size]
+
+A database is a folder. Nothing has to be registered: Candy Database finds it by the [code]database.json[/code] inside.
+
+[indent][code]My_Addon/
+    database.json
+    _header.txt              (optional: shown above every page)
+    _footer.txt              (optional: shown below every page)
+    _About/                  (optional: the About menu's pages)
+        01_Credits.txt
+    1.0.0/
+        _About/
+            01_Change_Log.txt
+        English/
+            01_Getting_Started/
+                01_Introduction.txt
+                02_Installing.txt
+            02_Reference/
+                01_Functions.txt
+        Deutsch/
+            ...
+        _images/
+            logo.png
+    2.0.0/
+        ...[/code][/indent]
+
+[ul]
+[b]database.json[/b] describes the database (see [url=page:Writing_a_Database/database_json]database.json[/url]).
+Each [b]version[/b] is a sub-folder of the database. Its name is what the version drop-down shows. Any sub-folder counts, except those starting with [code].[/code] or [code]_[/code].
+Each [b]language[/b] is a sub-folder of a version. Its name is what the language drop-down shows, so write it as you want it read ([code]Español[/code]; underscores show as spaces). The same rule applies: folders starting with [code].[/code] or [code]_[/code] are not languages. A version needs at least one.
+Folders inside a language are [b]categories[/b]. They can be nested.
+[code]txt[/code] files are [b]pages[/b] (see [url=page:Writing_a_Database/Pages]Pages[/url]).
+A page with the exact name of a folder next to it ([code]02_Reference.txt[/code] and [code]02_Reference/[/code]) [b]is that category[/b]: the page list shows it in the folder's place, with the folder's pages under it. Clicking it opens the page; like every category, it folds with its arrow.
+Folders and files starting with [code]_[/code] are ignored as categories and pages, so you can keep images, the header, the footer and notes in them.
+An [code]_About[/code] folder holds the pages of the [b]About menu[/b] instead (see [url=page:Writing_a_Database/About_Menu]About menu[/url]).
+[/ul]
+
+Empty folders, and folders with no page, are not shown.
+
+
+[font_size=22][b]Version names[/b][/font_size]
+Versions are sorted by their numbers, newest first: [code]1.10.0[/code] is newer than [code]1.9.0[/code]. A leading [code]v[/code] is ignored. Names that are not numbers sort alphabetically.
+
+
+[font_size=22][b]Language names[/b][/font_size]
+Languages are sorted alphabetically, after the reader's preferred languages. Which one opens first is explained in [url=page:Reading_Documentation/Databases_and_Versions]Databases, versions and languages[/url]; [code]default_language[/code] in [code]database.json[/code] sets the database's own choice.
+
+
+[font_size=22][b]Where to put it[/b][/font_size]
+In the library folder to use it in every project, or anywhere in a project. See [url=page:Getting_Started/Installing]Installing[/url]. If two databases have the same id, only the first is used, and the editor logs a warning.
