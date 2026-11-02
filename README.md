@@ -14,6 +14,8 @@ It provides a convenient way to design and browse add-on documentation, directly
 • Search tool.<br>
 • Supports mods (custom features).<br>
 
+![Screenshot_1](https://candy-arts.com/wp-content/uploads/2026/11/Screenshot-1.webp)
+
 ## Compatibiliy
 Candy Database is compatible with Godot 4.2+ (4.2 and above).
 
